@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Book a Photographer</h2>
+    <h3>Event Type: {{ event_type }}</h3>
+    <form method="POST" action="{{ url_for('booking', event=event_type) }}">
+        <label>Date:</label>
+        <input type="date" name="date" required>
+        
+        <label>Time:</label>
+        <input type="time" name="time" required>
+        
+        <label>Event Details:</label>
+        <textarea name="details" rows="4" required></textarea>
+        
+        <button type="submit">Confirm Booking</button>
+    </form>
+{% endblock %}

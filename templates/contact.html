@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="page-header">
+        <h2>Contact Us</h2>
+        <p>Have questions? We'd love to hear from you.</p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px; justify-content: center;">
+        
+        <div style="flex: 1; min-width: 250px; background: #f9f9f9; padding: 20px; border-radius: 8px;">
+            <h3>Get in Touch</h3>
+            <p><strong>Email:</strong> support@capturemoments.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong><br>
+               123 Tech Park, Suite 400<br>
+               Coimbatore, Tamil Nadu 641001<br>
+               India
+            </p>
+            <h4 style="margin-top: 20px; color: var(--primary-color);">Business Hours</h4>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+               Saturday: 10:00 AM - 4:00 PM<br>
+               Sunday: Closed
+            </p>
+        </div>
+
+        <div style="flex: 2; min-width: 300px;">
+            <form action="#" method="GET" style="max-width: 100%;">
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="your.email@example.com" required>
+                
+                <label>Subject:</label>
+                <input type="text" name="subject" placeholder="What is this regarding?" required>
+                
+                <label>Message:</label>
+                <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                
+                <button type="button" onclick="alert('Thank you for reaching out! We will get back to you soon.')">Send Message</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

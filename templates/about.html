@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="page-header">
+        <h2>About Capture Moments</h2>
+        <p>Your premier destination for professional photography services.</p>
+    </div>
+
+    <div class="content-section">
+        <h3>Our Story</h3>
+        <p>Founded in 2024, Capture Moments was created with a simple mission: to connect talented photographers with clients looking to preserve their most precious memories. We believe that every moment is unique and deserves to be captured with artistic vision and technical excellence.</p>
+        
+        <h3>Why Choose Us?</h3>
+        <ul style="max-width: 600px; margin: 0 auto; text-align: left; padding: 20px;">
+            <li><strong>Verified Professionals:</strong> All our photographers are carefully vetted for quality and reliability.</li>
+            <li><strong>Easy Booking:</strong> Our streamlined platform makes finding and booking the right photographer effortless.</li>
+            <li><strong>Secure Process:</strong> We handle all bookings securely through our advanced cloud-based system.</li>
+        </ul>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="{{ url_for('signup') }}" class="btn">Join Our Community</a>
+        </div>
+    </div>
+{% endblock %}
